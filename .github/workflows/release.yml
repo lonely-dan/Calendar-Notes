@@ -1,0 +1,40 @@
+name: Publish course release
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: "拾光日历 v1.0"
+          body: |
+            Android 日历备忘录课程设计提交包。
+
+            班级：计算机241
+            学号：2404020123
+            姓名：张凌昊
+
+            压缩包内含：
+            - 01-源码 / ShiguangCalendar
+            - 02-设计开发文档 / Word
+            - 03-演示视频 / MP4
+            - 04-APK / release APK
+          files: release/*.zip
+          fail_on_unmatched_files: true
+          draft: false
+          prerelease: false
