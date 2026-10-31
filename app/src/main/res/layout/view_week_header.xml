@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="26dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingHorizontal="8dp">
+
+    <TextView
+        style="@style/TextAppearance.Shiguang.Label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/week_mon" />
+
+    <TextView
+        style="@style/TextAppearance.Shiguang.Label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/week_tue" />
+
+    <TextView
+        style="@style/TextAppearance.Shiguang.Label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/week_wed" />
+
+    <TextView
+        style="@style/TextAppearance.Shiguang.Label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/week_thu" />
+
+    <TextView
+        style="@style/TextAppearance.Shiguang.Label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/week_fri" />
+
+    <TextView
+        style="@style/TextAppearance.Shiguang.Label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/week_sat"
+        android:textColor="@color/accent" />
+
+    <TextView
+        style="@style/TextAppearance.Shiguang.Label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/week_sun"
+        android:textColor="@color/accent" />
+</LinearLayout>

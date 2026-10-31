@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">拾光日历</string>
+
+    <!-- 静态学生信息：所有页面通过 view_identity_footer.xml 统一展示，运行时不可编辑 -->
+    <string name="student_class">计算机241</string>
+    <string name="student_id">2404020123</string>
+    <string name="student_name">张凌昊</string>
+    <string name="student_identity_full">班级：计算机241　学号：2404020123　姓名：张凌昊</string>
+
+    <!-- 首页 -->
+    <string name="brand_name">拾光</string>
+    <string name="brand_subtitle">把日子，写成故事</string>
+    <string name="home_eyebrow">CALENDAR · MEMO</string>
+    <string name="home_greeting">今天，也值得好好记录</string>
+    <string name="home_today_prefix">今天</string>
+    <string name="btn_record_event">记录事件</string>
+    <string name="home_hint">选择一个日期，写下值得记住的事</string>
+    <string name="home_status_empty">今天 · 还没有记录</string>
+    <string name="home_status_count">今天 · 已记录 %1$d 条</string>
+    <string name="home_month_day">%1$d月%2$d日</string>
+    <string name="month_only">%1$d月</string>
+    <string name="home_weekday">%1$s</string>
+    <string name="home_calendar_mark">拾光日历</string>
+    <string name="home_calendar_year">%1$d</string>
+
+    <!-- 日历页 -->
+    <string name="calendar_title">日历记事本</string>
+    <string name="calendar_subtitle">每一天，都值得被记录</string>
+    <string name="month_title">%1$d年%2$d月</string>
+    <string name="today">今天</string>
+    <string name="prev_month">上个月</string>
+    <string name="next_month">下个月</string>
+    <string name="week_mon">一</string>
+    <string name="week_tue">二</string>
+    <string name="week_wed">三</string>
+    <string name="week_thu">四</string>
+    <string name="week_fri">五</string>
+    <string name="week_sat">六</string>
+    <string name="week_sun">日</string>
+    <string name="filter_label">筛选</string>
+    <string name="filter_all_categories">全部类别</string>
+    <string name="filter_important">只看重要</string>
+    <string name="memo_count">%1$d 条记录</string>
+    <string name="memo_count_zero">还没有记录</string>
+    <string name="empty_title">这一天，还很安静</string>
+    <string name="empty_hint">点右上角的 + ，写下第一条记录</string>
+    <string name="empty_filtered_title">没有符合筛选的记录</string>
+    <string name="empty_filtered_hint">换一个分类，或取消“只看重要”</string>
+    <string name="add_memo">新增记录</string>
+    <string name="back">返回</string>
+    <string name="calendar_content_desc">月历</string>
+    <string name="today_content_desc">回到今天</string>
+    <string name="add_memo_content_desc">新增一条记录</string>
+    <string name="delete_memo_content_desc">删除记录</string>
+    <string name="no_content">没有附加备注</string>
+    <string name="no_title">无标题</string>
+    <string name="record_time">%1$s 更新</string>
+    <string name="memo_date_header">%1$d月%2$d日</string>
+    <string name="weekday_sun">星期日</string>
+    <string name="weekday_mon">星期一</string>
+    <string name="weekday_tue">星期二</string>
+    <string name="weekday_wed">星期三</string>
+    <string name="weekday_thu">星期四</string>
+    <string name="weekday_fri">星期五</string>
+    <string name="weekday_sat">星期六</string>
+    <string name="full_date">%1$d年%2$d月%3$d日 %4$s</string>
+    <string name="month_day">%1$d月%2$d日</string>
+
+    <!-- 编辑页 -->
+    <string name="edit_title_new">新建记录</string>
+    <string name="edit_title_edit">编辑记录</string>
+    <string name="edit_eyebrow">WRITE IT DOWN</string>
+    <string name="date_label">日期</string>
+    <string name="date_with_year">%1$d年%2$d月%3$d日</string>
+    <string name="title_label">标题</string>
+    <string name="title_hint">给这件事起个名字</string>
+    <string name="content_label">内容</string>
+    <string name="content_hint">补充一些细节吧……</string>
+    <string name="category_label">分类</string>
+    <string name="priority_label">重要程度</string>
+    <string name="priority_normal">普通</string>
+    <string name="priority_important">重要</string>
+    <string name="priority_urgent">紧急</string>
+    <string name="show_dot">在日历日期下方显示圆点</string>
+    <string name="save_memo">保存记录</string>
+    <string name="delete">删除</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+    <string name="delete_memo">删除记录</string>
+    <string name="discard_title">放弃本次编辑？</string>
+    <string name="discard_message">当前修改还没有保存，返回后将丢失。</string>
+    <string name="discard">放弃</string>
+    <string name="keep_editing">继续编辑</string>
+    <string name="delete_title">删除这条记录？</string>
+    <string name="delete_message">删除后无法恢复。</string>
+    <string name="toast_title_required">请先填写标题</string>
+    <string name="toast_saved">已保存到 %1$s</string>
+    <string name="toast_deleted">记录已删除</string>
+    <string name="toast_save_failed">保存失败，请重试</string>
+    <string name="toast_load_failed">读取记录失败</string>
+    <string name="pick_date">选择日期</string>
+    <string name="tap_to_change_date">点击修改日期</string>
+    <string name="save_success_date">已保存到 %1$s</string>
+
+    <!-- 分类与优先级 -->
+    <string name="category_study">学习</string>
+    <string name="category_life">生活</string>
+    <string name="category_work">工作</string>
+    <string name="category_other">其他</string>
+    <string name="priority_badge_important">重要</string>
+    <string name="priority_badge_urgent">紧急</string>
+
+    <!-- 通用 -->
+    <string name="identity_title">课程设计 · 学生信息</string>
+    <string name="quote">“把每一个普通的日子，过成值得翻看的页码。”</string>
+    <string name="cd_decor_calendar">装饰日历</string>
+    <string name="cd_calendar_icon">日历图标</string>
+
+    <!-- 无网络、无权限；数据只保存在本机 -->
+</resources>

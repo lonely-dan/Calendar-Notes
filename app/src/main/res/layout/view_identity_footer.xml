@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tvIdentityFooter"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/identity_height"
+    android:gravity="center"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="4dp"
+    android:text="@string/student_identity_full"
+    android:textColor="@color/text_muted"
+    android:textSize="10sp"
+    android:letterSpacing="0.04"
+    android:maxLines="1"
+    android:ellipsize="end"
+    android:importantForAccessibility="yes"
+    android:contentDescription="@string/student_identity_full" />

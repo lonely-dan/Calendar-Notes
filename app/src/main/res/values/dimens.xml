@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="screen_padding">20dp</dimen>
+    <dimen name="card_radius">24dp</dimen>
+    <dimen name="card_elevation">2dp</dimen>
+    <dimen name="calendar_cell_height">40dp</dimen>
+    <dimen name="calendar_grid_height">240dp</dimen>
+    <dimen name="toolbar_height">58dp</dimen>
+    <dimen name="identity_height">26dp</dimen>
+    <dimen name="touch_target">40dp</dimen>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/primary_soft" />
+            <corners android:radius="14dp" />
+        </shape>
+    </item>
+    <item
+        android:width="12dp"
+        android:height="12dp"
+        android:drawable="@drawable/ic_chevron_down"
+        android:end="10dp"
+        android:gravity="end|center_vertical" />
+</layer-list>

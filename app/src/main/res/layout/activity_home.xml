@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootHome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_home_gradient"
+    tools:context=".HomeActivity">
+
+    <!-- 装饰：柔和的色块与细线，不参与交互 -->
+    <View
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="-80dp"
+        android:layout_marginEnd="-90dp"
+        android:background="@drawable/bg_decor_blob"
+        android:alpha="0.55"
+        android:importantForAccessibility="no" />
+
+    <View
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="-48dp"
+        android:background="@drawable/bg_decor_orbit"
+        android:importantForAccessibility="no" />
+
+    <View
+        android:layout_width="9dp"
+        android:layout_height="9dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="154dp"
+        android:layout_marginEnd="44dp"
+        android:background="@drawable/bg_decor_orbit_small"
+        android:importantForAccessibility="no" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:fillViewport="true"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="26dp"
+                android:paddingTop="14dp"
+                android:paddingBottom="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:background="@drawable/bg_icon_circle" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="-27dp"
+                        android:contentDescription="@string/cd_calendar_icon"
+                        android:src="@drawable/ic_calendar" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvBrand"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:text="@string/brand_name"
+                            android:textColor="@color/primary"
+                            android:textSize="23sp"
+                            android:textStyle="bold"
+                            android:letterSpacing="0.12" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-2dp"
+                            android:text="@string/brand_subtitle"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="10sp"
+                            android:letterSpacing="0.16" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/home_eyebrow"
+                        android:textColor="@color/text_muted"
+                        android:textSize="8sp"
+                        android:letterSpacing="0.18" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="286dp"
+                    android:layout_marginTop="4dp"
+                    android:clipChildren="false"
+                    android:clipToPadding="false">
+
+                    <View
+                        android:layout_width="222dp"
+                        android:layout_height="222dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_decor_orbit"
+                        android:alpha="0.75"
+                        android:importantForAccessibility="no" />
+
+                    <View
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="30dp"
+                        android:background="@drawable/bg_decor_orbit_small"
+                        android:importantForAccessibility="no" />
+
+                    <View
+                        android:layout_width="7dp"
+                        android:layout_height="7dp"
+                        android:layout_gravity="top|end"
+                        android:layout_marginTop="44dp"
+                        android:layout_marginEnd="38dp"
+                        android:background="@drawable/bg_decor_orbit_small"
+                        android:alpha="0.75"
+                        android:importantForAccessibility="no" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="188dp"
+                        android:layout_height="214dp"
+                        android:layout_gravity="center"
+                        android:rotation="-4"
+                        app:cardBackgroundColor="@color/surface"
+                        app:cardCornerRadius="22dp"
+                        app:cardElevation="10dp"
+                        app:cardUseCompatPadding="false">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:background="@color/primary"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingHorizontal="18dp">
+
+                                <TextView
+                                    android:id="@+id/tvHomeMonth"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:textColor="@color/text_on_primary"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold"
+                                    tools:text="10月" />
+
+                                <TextView
+                                    android:id="@+id/tvHomeYear"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:alpha="0.66"
+                                    android:textColor="@color/text_on_primary"
+                                    android:textSize="10sp"
+                                    android:letterSpacing="0.12"
+                                    tools:text="2026" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tvHomeDay"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:fontFamily="serif"
+                                android:gravity="center"
+                                android:includeFontPadding="false"
+                                android:textColor="@color/primary"
+                                android:textSize="76sp"
+                                android:textStyle="bold"
+                                tools:text="30" />
+
+                            <TextView
+                                android:id="@+id/tvHomeWeekday"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingBottom="6dp"
+                                android:textColor="@color/text_secondary"
+                                android:textSize="12sp"
+                                android:letterSpacing="0.12"
+                                tools:text="星期五" />
+
+                            <View
+                                android:layout_width="28dp"
+                                android:layout_height="1dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginBottom="8dp"
+                                android:background="@color/line" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingBottom="12dp"
+                                android:text="@string/home_calendar_mark"
+                                android:textColor="@color/text_muted"
+                                android:textSize="9sp"
+                                android:letterSpacing="0.22" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tvHomeTodayChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_gravity="bottom|end"
+                        android:layout_marginEnd="50dp"
+                        android:layout_marginBottom="22dp"
+                        android:background="@drawable/bg_add_circle"
+                        android:gravity="center"
+                        android:paddingHorizontal="16dp"
+                        android:text="@string/home_today_prefix"
+                        android:textColor="@color/text_on_primary"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:letterSpacing="0.08"
+                        android:elevation="4dp" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="serif"
+                    android:text="@string/home_greeting"
+                    android:textColor="@color/text_primary"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:lineSpacingExtra="2dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:lineSpacingExtra="5dp"
+                    android:text="@string/quote"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="12sp" />
+
+                <Space
+                    android:layout_width="1dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:background="@drawable/bg_decor_orbit_small" />
+
+                    <TextView
+                        android:id="@+id/tvTodayStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="7dp"
+                        android:text="@string/home_status_empty"
+                        android:textColor="@color/text_muted"
+                        android:textSize="10sp"
+                        android:letterSpacing="0.06" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="26dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/home_hint"
+                android:textColor="@color/text_muted"
+                android:textSize="11sp"
+                android:letterSpacing="0.03" />
+
+            <Button
+                android:id="@+id/btnRecordEvent"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/accent"
+                app:backgroundTint="@color/accent"
+                android:text="@string/btn_record_event"
+                android:textColor="@color/text_on_primary"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.08"
+                android:stateListAnimator="@null"
+                app:cornerRadius="18dp"
+                app:elevation="3dp" />
+
+            <include
+                android:id="@+id/includeIdentity"
+                layout="@layout/view_identity_footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
